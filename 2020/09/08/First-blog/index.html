@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"yf0205.github.io","root":"/","scheme":"Muse","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂 那就先记一些琐事吧，顺便练习Markdown">
+  <meta name="description" content="写在前面Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂 那就先记一些琐事吧，顺便练习Markdown Next主题 内置标签的小tips">
 <meta property="og:type" content="article">
 <meta property="og:title" content="First Blog">
 <meta property="og:url" content="https://yf0205.github.io/2020/09/08/First-blog/index.html">
 <meta property="og:site_name" content="Something New?">
-<meta property="og:description" content="Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂 那就先记一些琐事吧，顺便练习Markdown">
+<meta property="og:description" content="写在前面Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂 那就先记一些琐事吧，顺便练习Markdown Next主题 内置标签的小tips">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-08T11:02:24.000Z">
-<meta property="article:modified_time" content="2020-09-08T11:13:52.524Z">
+<meta property="article:modified_time" content="2020-09-08T13:09:09.620Z">
 <meta property="article:author" content="Vivian_yf">
 <meta property="article:tag" content="琐事">
 <meta name="twitter:card" content="summary">
@@ -120,6 +120,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -158,11 +159,35 @@
     <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="algolia-stats"><hr></div>
+  <div class="algolia-hits"></div>
+  <div class="algolia-pagination"></div>
+</div>
+
+      
+    </div>
+  </div>
 
 </div>
         
@@ -175,7 +200,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -187,6 +212,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98-%E5%86%85%E7%BD%AE%E6%A0%87%E7%AD%BE%E7%9A%84%E5%B0%8Ftips"><span class="nav-number">2.</span> <span class="nav-text">Next主题 内置标签的小tips</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%B0%86%E6%96%87%E6%9C%AC%E5%B1%85%E4%B8%AD%E5%BC%95%E7%94%A8"><span class="nav-number">2.1.</span> <span class="nav-text">1. 将文本居中引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Bootstrap-callout-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">2. Bootstrap callout 设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9C%A8%E9%A6%96%E9%A1%B5%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%85%A8%E9%83%A8%E5%86%85%E5%AE%B9"><span class="nav-number">2.3.</span> <span class="nav-text">3. 在首页不显示全部内容</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -299,7 +325,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-09-08 19:02:24 / Modified: 19:13:52" itemprop="dateCreated datePublished" datetime="2020-09-08T19:02:24+08:00">2020-09-08</time>
+      <time title="Created: 2020-09-08 19:02:24 / Modified: 21:09:09" itemprop="dateCreated datePublished" datetime="2020-09-08T19:02:24+08:00">2020-09-08</time>
     </span>
 
   
@@ -312,8 +338,42 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p> Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂</p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>Hexo + github.io 搭建初见成效，才发现自己并没有想好分享些什么😂</p>
 <p>那就先记一些琐事吧，顺便练习Markdown</p>
+<h2 id="Next主题-内置标签的小tips"><a href="#Next主题-内置标签的小tips" class="headerlink" title="Next主题 内置标签的小tips"></a>Next主题 内置标签的小tips</h2><!--在首页只不显示全部内容-->
+<a id="more"></a>
+<h3 id="1-将文本居中引用"><a href="#1-将文本居中引用" class="headerlink" title="1. 将文本居中引用"></a>1. 将文本居中引用<hr></h3><p>将文本内容生成带有上下分割线的引用，同时引用文本将自动居中<br>用法如下：</p>
+<ul>
+<li>标签方式使用<code>centerquote</code>或者简写`cq’</li>
+</ul>
+<!--文本居中的引用-->
+<blockquote class="blockquote-center">
+<p>blah blah blah </p>
+
+</blockquote>
+<h3 id="2-Bootstrap-callout-设置"><a href="#2-Bootstrap-callout-设置" class="headerlink" title="2. Bootstrap callout 设置"></a>2. Bootstrap callout 设置<hr></h3><p>调用bootstrap callout 样式的使用方法如下：<br><code>&#123;% note class_name&#125;需要callout内容&#123;% endnote&#125;</code></p>
+<p>其中，<code>class_name</code>可以为如下值：</p>
+<ul>
+<li><code>default</code></li>
+<li><code>primary</code></li>
+<li><code>success</code></li>
+<li><code>info</code></li>
+<li><code>warning</code></li>
+<li><code>danger</code><br>调用bs-callout样式示例：<!--文本居中的引用-->
+<div class="note default"><p>Content of bs-callout (without define class style). </p>
+</div>
+<div class="note primary"><p>Content of (primary) bs-callout. </p>
+</div>
+<div class="note success"><p>Content of (success) bs-callout. </p>
+</div>
+<div class="note info"><p>Content of (info) bs-callout. </p>
+</div>
+<div class="note warning"><p>Content of (warning) bs-callout. </p>
+</div>
+<div class="note danger"><p>Content of (danger) bs-callout. </p>
+</div>
+<h3 id="3-在首页不显示全部内容"><a href="#3-在首页不显示全部内容" class="headerlink" title="3. 在首页不显示全部内容"></a>3. 在首页不显示全部内容</h3>刚刚更新完意外发现首页会将每一篇博客全部显示，影响阅读<br>可以在文章需要截断的地方加入：<br><code>&lt;!--more--&gt;</code></li>
+</ul>
 
     </div>
 
@@ -400,6 +460,10 @@
   
 
 
+
+
+  <script src="//cdn.jsdelivr.net/npm/algoliasearch@4.4.0/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4.7.1/dist/instantsearch.production.min.js"></script><script src="/js/algolia-search.js"></script>
 
 
 

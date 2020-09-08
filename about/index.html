@@ -25,7 +25,7 @@
   <meta name="description" content="Tomorrow is another day！">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About me">
-<meta property="og:url" content="https://yf0205.github.io/about/me.html">
+<meta property="og:url" content="https://yf0205.github.io/about/index.html">
 <meta property="og:site_name" content="Something New?">
 <meta property="og:description" content="Tomorrow is another day！">
 <meta property="og:locale" content="en_US">
@@ -35,7 +35,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://yf0205.github.io/about/me">
+<link rel="canonical" href="https://yf0205.github.io/about/">
 
 
 <script class="page-configurations">
@@ -120,6 +120,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -158,11 +159,35 @@
     <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="algolia-stats"><hr></div>
+  <div class="algolia-hits"></div>
+  <div class="algolia-pagination"></div>
+</div>
+
+      
+    </div>
+  </div>
 
 </div>
         
@@ -357,6 +382,10 @@
   
 
 
+
+
+  <script src="//cdn.jsdelivr.net/npm/algoliasearch@4.4.0/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4.7.1/dist/instantsearch.production.min.js"></script><script src="/js/algolia-search.js"></script>
 
 
 
